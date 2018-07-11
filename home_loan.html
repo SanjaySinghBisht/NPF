@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NPF forms</title>
+    <script src="js/Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+           <!--  tabs jQuery -->
+		$('.container').css('width',$('nav ul').width()-22);
+		$('.menu li a').click(function () {
+				$('.container').css('display','none');
+				$('#'+$(this).attr('name')).css('display','block');
+				$('nav li a').removeClass('active');
+				$(this).addClass('active');
+            });
+			 $('.tabs .inner-li li a').click(function () {
+				$('.show-image').css('display','none');
+				$('#'+$(this).attr('name')).css('display','block');
+				$('nav li a').removeClass('active');
+				$(this).addClass('active');
+            });
+			$('.tabs .inner-li1 li a').click(function () {
+				$('.show-image1').css('display','none');
+				$('#'+$(this).attr('name')).css('display','block');
+				$('nav li a').removeClass('active');
+				$(this).addClass('active');
+            });
+			
+        });
+    </script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="pop_up"><div class="demo">sanjay</div></div>
+<div class="regitration_form">
+<div class="form_wrapper" id="form_wrapper">
+<form class="Register">
+            <h3>Registration<span class="close_form">X</span></h3>
+            <div>
+                <label>Username:</label>
+                <input id="test" type="text">
+            </div>
+            <div>
+                <label>Password: <a class="forgot linkform" rel="forgot_password" href="forgot_password.html">Forgot your password?</a></label>
+                <input type="password">
+            </div>
+             <div>
+               <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+        </div>
+</div>
+<div class="tabs">
+    <nav class="menu">
+		<ul>
+			<li><a class="active" name="First" href="#" >Form No.: HBL/NGIF/1</a></li>
+			<li><a name="Second" href="#" >Form No.: HBL/NGIF/2</a></li>
+			<li><a name="Third" href="#" >Form No.: HBL/NGIF/3</a></li>
+			<li><a name="Fourth" href="#" >Form No.: HBL/NGIF/4</a></li>
+			<li><a name="Fifth" href="#" >Form No.: HBL/NGIF/5</a></li>
+			<li><a name="Sixth" href="#" >Form No.: HBL/NGIF/6</a></li>
+			<li><a name="Seventh" href="#" >Form No.: HBL/NGIF/7</a></li>
+			<li><a name="Eight" href="#" >Form No.: HBL/NGIF/8</a></li>
+			<li><a name="Ninth" href="#" >Form No.: HBL/NGIF/9</a></li>
+			<li><a name="Tenth" href="#" >Form No.: HBL/NGIF/10</a></li>
+			<li><a name="Eleventh" href="#" >Form No.: HBL/NGIF/11</a></li>
+		</ul>
+	</nav>
+	<div class="container"  id="First">
+	<p class="form">Application Form</p>
+	<nav class="inner-li">
+		<ul>
+			<li><a class="active" name="one" href="#" >Step1</a></li>
+			<li><a name="two" href="#" >Step2</a></li>
+			<li><a name="three" href="#" >Step3</a></li>
+			<li><a name="four" href="#" >Step4</a></li>
+			<li><a name="five" href="#" >Step5</a></li>
+			<li><a name="six" href="#" >Step6</a></li>
+			<li><a name="seven" href="#" >Step7</a></li>
+		</ul>
+	</nav>
+	<div class="inner-tabs">
+		<img id="one" style="display:block" class="show-image" src="home_loan_images/1.1.png"/>
+		<img id="two" class="show-image" src="home_loan_images/1.2.png"/>
+		<img id="three" class="show-image" src="home_loan_images/1.3.png"/>
+		<img id="four" class="show-image"src="home_loan_images/1.4.png"/>
+		<img id="five" class="show-image" src="home_loan_images/1.5.png"/>
+		<img id="six" class="show-image" src="home_loan_images/1.6.png"/>
+		<img id="seven" class="show-image" src="home_loan_images/1.7.png"/>		
+		</div>
+	</div>
+	<div class="container"  id="Second">
+	<p class="form">Application Form</p>
+			<nav class="inner-li1">
+		<ul>
+			<li><a class="active" name="eigth" href="#" >Step1</a></li>
+			<li><a name="nine" href="#" >Step2</a></li>
+			
+		</ul>
+	</nav>
+	<div class="inner-tabs1">
+		<img id="eigth" class="show-image1" style="display:block" src="home_loan_images/2.1.png"/>
+		<img id="nine" class="show-image1" src="home_loan_images/2.2.png"/>
+		
+		</div>
+	</div>
+	</div>
+	<div class="container"  id="Third">
+			<p class="form">Application Form</p>
+			<img src="home_loan_images/3.png"/>
+	</div>
+	<div class="container"  id="Fourth">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/4.png"/>
+	</div>
+	<div class="container"  id="Fifth">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/5.png"/>
+	</div>
+	<div class="container"  id="Sixth">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/6.png"/>
+	</div>
+	<div class="container"  id="Seventh">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/7.png"/>
+	</div>
+	<div class="container"  id="Eight">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/8.png"/>
+	</div>
+	<div class="container"  id="Ninth">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/9.png"/>
+	</div>
+	<div class="container"  id="Tenth">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/10.png"/>
+	</div>
+	<div class="container"  id="Eleventh">
+	<p class="form">Application Form</p>
+			<img src="home_loan_images/11.png"/>
+	</div>
+	</div>
+
+</body>
+</html>
+
